@@ -27,13 +27,17 @@ export class Dashboard extends Component {
             dashboardContent = <Spinner />
         } else {
             let serachStrr = [];
-            posts.map(post => {
-                let searchName = post.image_name
-                if (searchName.includes(this.state.text)) {
-                    serachStrr.push(post)
-                }
-                dashboardContent = serachStrr.map(post => (<DashboardCard post={post} />))
-            })
+            if (posts.length > 0) {
+                posts.map(post => {
+                    let searchName = post.image_name
+                    if (searchName.includes(this.state.text)) {
+                        serachStrr.push(post)
+                    }
+                    dashboardContent = serachStrr.map(post => (<DashboardCard post={post} />))
+                })
+            } else {
+                dashboardContent = <h5>Images Not FOund!</h5>
+            }
         }
 
         return (

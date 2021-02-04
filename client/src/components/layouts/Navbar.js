@@ -47,7 +47,7 @@ class Navbar extends Component {
         )
         return (
             <div>
-                <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark">
                     <div className="container">
                         <Link className="navbar-brand" to='/dashboard'>Dobby-ads</Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,7 +55,7 @@ class Navbar extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse" >
 
                             {(isAuthenticated) ? authLinks : guestLinks}
                         </div>

@@ -13,6 +13,7 @@ class AddPost extends Component {
             username: '',
             imagePreview: null,
             onImagePreview: '',
+            hide_el: false,
             errors: {}
         }
         this.onChange = this.onChange.bind(this);
@@ -42,6 +43,7 @@ class AddPost extends Component {
         postData.append('imagePreview', imagePreview)
         postData.append('text', text)
         this.props.createPost(postData, this.props.history);
+        this.setState({ hide_el: true })
     }
 
     render() {
@@ -71,13 +73,13 @@ class AddPost extends Component {
                                     <div className="buttons">
                                         <div className="btn-post">
                                             <input type="file" id="addPic" name="addPic" hidden onChange={this.onChangeHandler} />
-                                            <label className="btn btn-primary" htmlFor="addPic">Choose</label>
+                                            <label className="btn btn-primary" hidden={this.state.hide_el} htmlFor="addPic">Choose</label>
                                         </div>
                                         <div className="btn-post">
-                                            <button type="submit" disabled={!this.state.text || this.state.imagePreview == null} className="btn btn-primary">Post</button>
+                                            <button type="submit" hidden={this.state.hide_el} disabled={!this.state.text || this.state.imagePreview == null} className="btn btn-primary">Post</button>
                                         </div>
                                     </div>
-                                    {loading ?
+                                    {this.state.hide_el ?
                                         <Spinner /> :
                                         ''
                                     }

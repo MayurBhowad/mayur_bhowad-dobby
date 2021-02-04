@@ -26,18 +26,21 @@ export class Dashboard extends Component {
         if (posts === null || loading) {
             dashboardContent = <Spinner />
         } else {
-            let serachStrr = [];
-            if (posts.length > 0) {
-                posts.map(post => {
-                    let searchName = post.image_name
-                    if (searchName.includes(this.state.text)) {
-                        serachStrr.push(post)
-                    }
-                    dashboardContent = serachStrr.map(post => (<DashboardCard post={post} />))
-                })
-            } else {
-                dashboardContent = <h5>Images Not FOund!</h5>
+            if (posts) {
+                let serachStrr = [];
+                if (posts.length > 0) {
+                    posts.map(post => {
+                        let searchName = post.image_name
+                        if (searchName.includes(this.state.text)) {
+                            serachStrr.push(post)
+                        }
+                        dashboardContent = serachStrr.map(post => (<DashboardCard post={post} />))
+                    })
+                } else {
+                    dashboardContent = <h5>Images Not FOund!</h5>
+                }
             }
+
         }
 
         return (
@@ -48,8 +51,8 @@ export class Dashboard extends Component {
                         name="text" onChange={this.onChange} />
                 </div>
                 <hr />
-                <div class=" container-fluid">
-                    <div class="row justify-content-center">
+                <div className=" container-fluid">
+                    <div className="row justify-content-center">
                         {dashboardContent}
                     </div>
                 </div>
@@ -61,9 +64,9 @@ export class Dashboard extends Component {
 
 export const DashboardCard = ({ post }) => {
     return (
-        <div key={post._id} class="col-auto mb-3">
-            <div class="card" style={{ width: "18rem" }}>
-                <div class="card-body">
+        <div key={post._id} className="col-auto mb-3">
+            <div className="card" style={{ width: "18rem" }}>
+                <div className="card-body">
                     <img src={post.image_path} alt="" />
                     <div className="actions"><p>{post.image_name}</p>
                         {/* <button className="btn btn-danger" >delete</button> */}

@@ -1,0 +1,550 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+  height: 100%;
+}
+body{
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+
+.login .card{
+  position: relative;
+  margin-top: 50px;
+  height: 700px;
+}
+
+.login .card-body{
+  max-width: 400px;
+}
+
+/* home */
+.home{
+  margin: 20px;
+}
+
+.home .plus-post img{
+  width: 15%;
+  margin: 10px;
+}
+
+.home .card .plusimg{
+  text-align: center;
+}
+
+.home .card-header{
+  padding: 0;
+}
+
+.home .row{
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.col{
+  text-align: center;
+  margin: 2px;
+}
+
+.home .card {
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.home .card #avatar{
+  padding: 0px 10px 0px 10;
+}
+
+.home .card #nametitle{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.home .card a{
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+}
+
+/* .home .card-img-top{
+  width: 100%;
+  height: 60%;
+} */
+
+.avatar{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.home h1{
+  font-size: 20px;
+  text-align: start;
+  font-weight: bold;
+}
+
+.home h4{
+  font-size: 15px;
+  text-align: start;
+}
+
+.home #col2 #dropdownMenuButton{
+  background: transparent;
+  border: none;
+}
+
+.home #col2 .menudot{
+  padding-top: 15px;
+}
+
+.menu::after{
+  content: '\2807';
+  font-size: 1.5em;
+  color: #2e2e2e;
+}
+
+.likecomment{
+  padding: 10px 0 0 10px;
+  margin: 0;
+}
+
+.likecomment img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.home .card .card-body{
+  padding: 0;
+}
+
+
+.home .card .comment-section p{
+  display: inline-block;
+}
+
+.home .card .comment-section .btn{
+    padding: 0;
+    padding-left: 4px;
+    margin-right: 50px;
+    float: right;
+    color: red;
+}
+
+.comment-section .reply{
+  font-size: 13px;
+  opacity: .6;
+}
+
+.home #col3{
+  position: fixed;
+  float: right;
+  width: 30%;
+  margin-left: 630px;
+}
+
+.home #col3 .container{
+  padding: 0;
+  background-color: #ebe7e7;
+  height: 100%;
+}
+
+.home .row .col{
+  padding: 0;
+}
+
+.home .avatar{
+  margin: 10px 0 10px 0; 
+}
+
+.home a{
+  margin-top: 10px;
+}
+
+.home #col3 #nametitle a{
+  text-decoration: none;
+} 
+
+.home #col3 h4{
+  padding-top: 20px;
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+.home #col3 p{
+  color: black;
+  font-size: 12px;
+  text-align: start;
+}
+
+.home #col3 .button{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#col3 .suggestions{
+  padding: 10px;
+}
+
+#col3 .suggestions h5{
+  margin-left: 10px;
+  font-size: 12px;
+  text-align: start;
+}
+
+/* post card */
+.postCard .add-comment{
+  /* position: relative; */
+  display: flex;
+  margin-top: 0;
+}
+
+.postCard .add-comment textarea{
+  width: 100%;
+  height: 800%;
+}
+
+.postCard .add-comment button{
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+}
+
+.postCard .add-comment .form-control{
+  height: 40px;
+}
+
+/* signup form */
+.login .card{
+  margin-top: 0;
+  height: 100%;
+}
+
+.custom-select{
+  max-width: 120px;
+}
+
+.divider-text{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.divider-text span{
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.divider-text:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+
+.btn-facebook{
+  background-color: #405D9D;
+  color: #fff;
+}
+
+.btn-twitter{
+  background-color: #42AEEC;
+  color: #fff;
+}
+
+.btn i{
+  margin-right: 5px;
+}
+
+article{
+  width: 400px;
+}
+
+/* Profile */
+
+.profile .rounded-circle{
+  width: 90%;
+}
+
+/* ProsPriofiles */
+.profiles .rounded-circle{
+  width: 100%;
+}
+
+/* dashboard */
+
+.dashboard .sideimg img{
+  width: 30%;
+  margin-top: 30px;
+  box-shadow: 10px 10px 10px #ccc;
+}
+
+.dashboard .btn{
+  border: 2px solid #a6aec0;
+}
+
+/* Edit profile  */
+.createprofile .avatar,
+.editprofile .avatar{
+  width: 015rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Add Experience */
+.addexperience .personal-info{
+  margin-left: 10rem;
+}
+
+.addexperience .fromdate-form-control{
+  width: 520px;
+}
+
+/* Add Education */
+
+.addeducation .toptitle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.addeducation .toptitle h1{
+  
+}
+
+.addeducation .toptitle .btn{
+  margin: 7px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* All Props */
+.allpros .top-header{
+  align-items: center;
+  text-align: center;
+}
+
+.allpros .card-img-top{
+  width: 70%;
+  margin-top: 1rem;
+  border-radius: 50%;
+}
+
+.allpros .card{
+  margin: 1rem;
+  height: 32rem;
+  align-items: center;
+  transition: box-shadow .5s;
+}
+
+.allpros .card:hover{
+  box-shadow: 5px 5px 5px 5px rgb(161, 160, 160);
+}
+
+.allpros .card-body{
+  width: 100%;
+}
+
+.allpros .cardname{
+  text-align: left;
+  float: left;
+}
+
+.allpros .cardatname{
+  text-align: right;
+  float: right;
+}
+
+.allpros .card-text{
+  overflow: hidden;
+  /* padding: 40px; */
+  height: 10rem;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  font-size: 14px;
+}
+
+/* Add Post */
+.post-content{
+  width: 40rem;
+}
+
+.add-post .card{
+  margin: 0 80px;
+}
+
+.add-post .add-post-img{
+  border: rgb(0, 0, 0) solid 2px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.add-post h3{
+  font-size: 1rem;
+}
+
+.add-post .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-post .btn-post {
+  margin-top: 5px;
+  text-align: end;
+}
+
+.add-post .btn-post button{
+  padding: 4px 30px;
+}
+
+/* Comments */
+.add-comment .dropdown{
+  
+}
+
+
+
+@media only screen and (max-width: 2000px){
+  /* home */
+  .home #col3{
+    position: fixed;
+    float: right;
+    width: 25%;
+    margin-left: 750px;
+  }
+
+}
+
+@media only screen and (max-width: 1080px){
+  /* home */
+  .home #col3{
+    position: fixed;
+    float: right;
+    width: 30%;
+    margin-left: 630px;
+    /* display: none; */
+  }
+
+
+  /* Edit profile  */
+.editprofile .avatar{
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
+/* Add Experience */
+.addexperience .fromdate-form-control{
+  width: 480px;
+}
+
+/* all pros */
+.allpros .card{
+  width: 280px;
+  height: 500px;
+}
+
+}
+
+
+@media only screen and (max-width: 400px){
+  /* home */
+  .home #col3{
+    position: fixed;
+    float: right;
+    width: 30%;
+    margin-left: 630px;
+    /* display: none; */
+  }
+  .login .card{
+      width: 400px;
+      margin-top: 50px;
+      height: 700px;
+      margin-right: 0;
+  }
+
+  
+  /* home */
+  .home #col3{
+    position: fixed;
+    /* float: right; */
+    width: 30%;
+    margin-left: 630px;
+  }
+
+  .home .card #nametitle{
+      margin-left: 30px;
+  }
+
+  /* .home h1{
+      font-size: 15px;
+      text-align: start;
+      font-weight: bold;
+      margin-left: 15px;
+      margin-top: 5px;
+  } */
+  
+  /* .home h4{
+      font-size: 12px;
+      text-align: start;
+      margin-left: 15px;
+  } */
+
+  /* Profile */
+ /* Dashboard */
+
+ .dashboard .sideimg img{
+     width: 50%;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ 
+
+  .dashboard .btn-light{
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Add Experience */
+.addexperience .personal-info{
+  margin-left: 0rem;
+}
+
+.addexperience .fromdate-form-control{
+  width: 270px;
+}
+
+/* all pros */
+.allpros .card{
+  width: 300px;
+  height: 510px;
+}
+
+.allpros .card-text{
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 4.8em;
+}
+
+.add-post .card{
+  margin: 0 0px;
+}
+  
+}
+
